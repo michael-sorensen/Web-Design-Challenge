@@ -213,9 +213,6 @@ h4 {
 }
 
 
-
-
-
 /* -------------IMAGE BOX HOVER------------- */
 .ctnr {
   position: relative;
@@ -274,7 +271,6 @@ text-decoration: none;
 hr.small {
   height: 2px;
   background-color: #aed2f1;
-  margin-left:20px;
   margin-bottom:30px;
   margin-top:0px;
   width:100%;
@@ -283,7 +279,6 @@ hr.small {
 hr.small2 {
   height: 2px;
   background-color: #aed2f1;
-  margin-left:20px;
   margin-bottom:30px;
   margin-top:30px;
   width:100%;
