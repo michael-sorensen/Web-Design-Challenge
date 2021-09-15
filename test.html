@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +9,10 @@
   <nav class="navbar">
       <div class="container">
         <a href="index.html"><img class="icon2" src="assets/WeatherLogo.svg">
-          <div class="title-text">Python & OpenWeather APIs</div></a>
+        <div class="title-text">Python & OpenWeather APIs</div></a>
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Visualizations</a>
@@ -23,7 +24,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="comp.html">Comparisons</a>
+            <a class="nav-link" href="comp.html">Comparisons</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="data.html">Data</a>
@@ -33,49 +34,22 @@
     </nav>
 </head>
 
-
-
-
-
-
 <body>
-  <img src="assets/comp_banner.jpg" class="img-fluid" alt="...">
   <div class="container">
     <div class="row">
-        <div class="plot-header" style="text-align:center;">
-            <h2 class="plot-title">Comparisons</h2>
+        <div class="col-md-3 col-sm-3 col-xs-6"> 
+        <div class="box-main">
+            <a href="#" class="btn btn-sm animated-button sandy-four">Learn more</a>
         </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="box-main-4">
-            <img src="visualizations/lat_v_temp_lg.png" style="width:100%">
-            </div>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <div class="box-main-4">
-            <img src="visualizations/lat_v_humidity_lg.png" style="width:100%">
-        </div>
+      <div class="col-lg-4 col-md-12">
+        <a href="comp.html"><div class="box-main-2">
+            <h2 class="light">Comparisons</h2>
+            <p class="dark">Compare weather metrics.</p>
+            <img src="assets/compare.png" width="100%">
+        </div></a>
       </div>
     </div>
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="box-main-4">
-            <img src="visualizations/lat_v_cloudiness_lg.png" style="width:100%">
-        </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="box-main-4">
-            <img src="visualizations/lat_v_windspeed_lg.png" style="width:100%">
-        </div>
-        </div>
-        </div>
-      </div>
-
-
-
-
-</div>
 
 <footer class="page-footer font-small footer-dark">
     <div class="footer-copyright text-center py-3">© Michael Sorensen 2021
