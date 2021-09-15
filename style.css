@@ -10,7 +10,7 @@
   align-content: center;
   width:100%;
   display:inline-block;
-  padding:10px 30px 0px 30px;
+  padding:0px 30px 0px 30px;
 }
 
 img{
@@ -18,15 +18,18 @@ img{
 }
 .img-fluid{
   margin-bottom: 0px;
+  width:100%;
 }
 
 .box-main {
   font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  min-height: 50px;
   padding: 20px;
-  margin: 10px;
   color:black;
+  word-wrap:break-word;
+}
+
+.button-box {
+  padding: 10px;
   word-wrap:break-word;
 }
 
@@ -39,6 +42,10 @@ img{
   background: linear-gradient(180deg, rgba(1,39,73,0) 10%, rgba(1,39,73,1) 100%);
   word-wrap:break-word;
   border-radius: 4%;
+}
+
+.box-main-2:hover {
+  opacity: .75;
 }
 
 .box-main-3 {
@@ -56,11 +63,6 @@ img{
   margin: 5px;
 }
 
-.sidebar{
-  background-color:#aed2f1;
-
-  border-radius:10px;
-}
 .plot-header{
   width:100%;
   display: inline-block;
@@ -70,11 +72,11 @@ img{
   margin-bottom: 10px;
   background-clip:padding-box;
   border-radius: 10px;
-  vertical-align:middle;
 }
 
 .icon{
   height:60px;
+  margin-right: 10px;
   width:auto;
   display:inline-block;
   vertical-align: middle;
@@ -91,6 +93,7 @@ img{
 p{
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
+  color: #012749;
 }
 
 p.dark{
@@ -99,12 +102,35 @@ p.dark{
   color: #012749;
   font-weight: 600;
   text-align: center;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none !important;
 }
 
 p.description{
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
+  margin:0px 20px 20px 20px;
+}
+
+p.caption{
+  font-family: 'Poppins', sans-serif;
+  display:inline;
+  text-transform: uppercase;
+  font-size: .8vw;
+  color:white;
+  font-weight: 600;
   margin-left:20px;
+  padding:5px 15px 5px 15px;
+  border: 1.5px solid white;
+  border-radius:8px;
+  width:fit-content;
+  word-wrap:normal;
+  letter-spacing: .08em;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -127,9 +153,9 @@ h2.light{
   background-color: #012749;
   display:inline-block;
   color:white;
-  padding:5px;
+  padding:5px 5px 11px 5px;
   text-align: center;
-  background-clip:padding-box;
+  vertical-align: middle;
   border-radius: 10px;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
@@ -140,18 +166,41 @@ h2.plot-title{
   font-size: 2.2vw;
   color:white;
   font-family: 'Space Mono', monospace;
-  font-weight: 700;
+  text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+  font-weight: 600;
   display: inline;
   vertical-align:middle;
 }
 
 h3 {
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   color:#012749;
+  text-transform: uppercase;
   font-family: 'Space Mono', monospace;
   font-weight: 700;
-  padding:0;
+  padding-bottom: 5px;
+  letter-spacing: .1em;
+}
+
+
+h5 {
+  width:100%;
+  display: inline-block;
+  box-sizing: content-box;
+  background-clip:padding-box;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.1vw;
+  color:#012749;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #012749;
+  border-top: 3px solid #012749;
+
 }
 
 h4 {
@@ -197,12 +246,6 @@ h4 {
   color: white;
   background-color: #1192e8;
 }
-.py-3{
-  color:#012749;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
 
 .icon2{
   height:40px;
@@ -212,21 +255,27 @@ h4 {
   margin-right:10px;
 }
 
+@media screen and (max-width: 768px) {
+  .icon {
+    height:30px;
+  }
+}
+
 
 /* -------------IMAGE BOX HOVER------------- */
 .ctnr {
   position: relative;
+  padding-top:10px;
 }
 
 .img_box {
   opacity: 1;
-  display: inline;
+  display: block;
   width: 100%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
   border-radius:10%;
-
 }
 
 .middle {
@@ -235,12 +284,13 @@ h4 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(0%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
 }
 
 .ctnr:hover .img_box {
   opacity: 0.3;
+  transform: scale(1.08)
 }
 
 .ctnr:hover .middle {
@@ -248,15 +298,14 @@ h4 {
 }
 
 .text {
-  border-radius: 10%;
   display: inline-block;
-  background-clip:padding-box;
+  border-radius: 10%;
   background-color: #1192e8;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25vw;
+  font-size: 1.2vw;
   font-weight: 400;
-  padding: 10px 10px;
+  padding: 10px 15px;
 }
 
 .ctnr:hover .middle a{
@@ -283,16 +332,6 @@ hr.small2 {
   margin-top:30px;
   width:100%;
 }
-
-/*a:link{
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited{
-  text-decoration: none;
-  color: inherit;
-}*/
 
 table, th, td{
   border:10px;
@@ -333,7 +372,7 @@ tr:hover {
 
 
 
-/*TESTING*/
+/*SIDEBAR BUTTONS*/
 
 a.animated-button:link:after, a.animated-button:visited:after {
 	content: "";
@@ -345,10 +384,10 @@ a.animated-button:link:after, a.animated-button:visited:after {
 	top: 50%;
 	width: 100%;
 	z-index: -1;
-	-webkit-transition: all 1.2s ease .2s;
-	-moz-transition: all 1.2s ease .2s;
-	-o-transition: all 1.2s ease .2s;
-	transition: all 1.2s ease .2s;
+	-webkit-transition: all .5s ease .2s;
+	-moz-transition: all .5s ease .2s;
+	-o-transition: all .5s ease .2s;
+	transition: all .5s ease .2s;
 }
 a.animated-button:link:hover, a.animated-button:visited:hover {
 	color: white;
@@ -372,10 +411,10 @@ a.animated-button:link, a.animated-button:visited {
 	text-transform: uppercase;
 	overflow: hidden;
 	letter-spacing: .08em;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
 }
 
 a.animated-button.sandy-four {
@@ -385,10 +424,10 @@ a.animated-button.sandy-four:after {
 	background: #012749;
   color:white;
 	opacity: .5;
-	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-webkit-transform: translateY(-30%) translateX(-30%) rotate(90deg);
-	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-moz-transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	transform: translateY(-50%) translateX(-50%);
 }
 a.animated-button.sandy-four:hover:after {
 	opacity: 1;
