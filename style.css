@@ -74,6 +74,12 @@ img{
   border-radius: 10px;
 }
 
+@media screen and (max-width: 991px) {
+  .plot-header {
+    text-align: center;
+  }
+}
+
 .icon{
   height:60px;
   margin-right: 10px;
@@ -116,6 +122,12 @@ p.description{
   margin:0px 20px 20px 20px;
 }
 
+@media screen and (max-width: 768px) {
+  p.description {
+    font-size:14px;
+  }
+}
+
 p.caption{
   font-family: 'Poppins', sans-serif;
   display:inline;
@@ -131,6 +143,15 @@ p.caption{
   word-wrap:normal;
   letter-spacing: .08em;
   text-shadow: 0px 5px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  p.caption {
+    font-size:10px;
+    display:inline-block;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
 }
 
 h1 {
@@ -172,6 +193,12 @@ h2.plot-title{
   vertical-align:middle;
 }
 
+@media screen and (max-width: 768px) {
+  h2.plot-title {
+    font-size: 22px;
+  }
+}
+
 h3 {
   text-align: center;
   font-size: 23px;
@@ -200,7 +227,12 @@ h5 {
   margin-bottom: 20px;
   border-bottom: 3px solid #012749;
   border-top: 3px solid #012749;
+}
 
+@media screen and (max-width: 991px) {
+  h5 {
+    font-size:15px;
+  }
 }
 
 h4 {
@@ -303,7 +335,7 @@ h4 {
   background-color: #1192e8;
   color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2vw;
+  font-size: 22px;
   font-weight: 400;
   padding: 10px 15px;
 }
@@ -313,7 +345,11 @@ color:white;
 text-decoration: none;
 }
 
-
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 25px;
+  }
+}
 
 
 /* -------------OTHER------------- */
@@ -436,6 +472,6 @@ a.animated-button.sandy-four:hover:after {
 
 @media screen and (max-width: 768px) {
   a.animated-button:link, a.animated-button:visited {
-    font-size: 15px;
+    font-size: 12px;
   }
 }

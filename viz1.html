@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
@@ -38,7 +39,8 @@
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="plot-header">
-            <img class="icon" src="assets/temp_thumb.png">
+          <div class="d-none d-md-inline d-lg-inline d-xl-inline">
+            <img class="icon" src="assets/temp_thumb.png"></div>
               <h2 class="plot-title">Latitude vs. Max Temperature</h2>
               <p class="caption">Data from August 25, 2021</p></div>
               <p class="description">The relationship between latitude and maximum temperature is somewhat significant, although the r-squared values are only in the 50% range. Temperatures are hottest near the equator, but decrease moving towards the poles.</p>   
@@ -49,6 +51,9 @@
       <img class="box-img" src="visualizations/lat_v_temp_lg2.png">
     </div>
     <div class="col-lg-2 col-md-12 col-sm-12">
+      <div class="d-lg-none">
+        <br>
+      </div>
       <h5>Graphs</h5>
         <a href="viz2.html" class="btn btn-sm animated-button sandy-four">Humidity</a>
         <a href="viz3.html" class="btn btn-sm animated-button sandy-four">Cloudiness</a>
