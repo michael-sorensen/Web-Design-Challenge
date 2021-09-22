@@ -295,7 +295,7 @@ h4 {
 
 .nav-link {
   background-color:white;
-  display: inline-block;
+  display: inline;
   padding: .5rem 1rem;
   margin: 6px;
   color:#012749;
@@ -303,21 +303,15 @@ h4 {
   font-size: 15px;
   font-weight: 400;
   vertical-align: middle;
-  align-items: right;
 }
 
-ul.nav.nav-pills {
-  text-align: right;
-}
-
-.nav-pills>li {
-  float: right;
-  display: inline;
-}
-
-.nav-link {
-  float: right;
-  display: inline;
+@media (max-width : 992px) {
+  .navbar-collapse{
+    margin-top:20px;
+    align-items: center; }
+  .nav-link{
+    display:block;
+  }
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -327,7 +321,7 @@ ul.nav.nav-pills {
 
 @media screen and (max-width: 768px) {
   .icon {
-    height:30px;
+    height:100px;
   }
 }
 
