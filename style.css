@@ -6,6 +6,7 @@
 
 
 /* -------------BOXES & CONTAINERS------------- */
+
 .box-img{
   align-content: center;
   width:100%;
@@ -88,11 +89,35 @@ img{
   vertical-align: middle;
 }
 
-@media screen and (max-width: 768px) {
-  .icon {
+
+.icon2{
+  height:45px;
+  width:auto;
+  display:inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px){
+  .icon2{
+    height:36px;
+  }
+}
+
+/*
+@media (max-width: 1200px){
+  .icon2{
+    height:35px;
+  }
+}
+
+
+
+@media (max-width: 576px){
+  .icon2{
     height:30px;
   }
 }
+*/
 
 
 /* -------------FONTS & HEADERS------------- */
@@ -257,9 +282,15 @@ h4 {
 
 /* -------------NAVAGATION AND NAVBAR------------- */
 .navbar{
-  padding: 20px;
+  padding: 20px 0px 20px 0px;
   background-color:#012749;
   vertical-align: middle;
+}
+
+@media (max-width: 768px){
+  .nav-link{
+    font-size:12px;
+  }
 }
 
 .nav-link {
@@ -272,19 +303,26 @@ h4 {
   font-size: 15px;
   font-weight: 400;
   vertical-align: middle;
+  align-items: right;
+}
+
+ul.nav.nav-pills {
+  text-align: right;
+}
+
+.nav-pills>li {
+  float: right;
+  display: inline;
+}
+
+.nav-link {
+  float: right;
+  display: inline;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: white;
   background-color: #1192e8;
-}
-
-.icon2{
-  height:40px;
-  width:auto;
-  display:inline;
-  vertical-align: middle;
-  margin-right:10px;
 }
 
 @media screen and (max-width: 768px) {
